@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+
+        }
+       .grid {
+        display: grid;
+        grid-template-columns: 25% 37.5% 37.5%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            " setting continue recommendations"
+            ;
+       }
+       .setting {
+        grid-area: setting;
+        background-color: rgb(255, 142, 142);
+        flex-direction: column;
+        color: white;
+
+       }
+       .profile {
+        height: 130px;
+        width: 130px;
+        object-fit: cover;
+        border-radius: 50% ;
+        margin: auto;
+        display: block;
+        margin-top: 10%;
+    
+       }
+       .jung05 {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+        
+
+       }
+
+       .profile-settings {
+        font-size: 8px;
+        text-align: center;
+        font-weight: 200;
+        color: pink;
+       
+       }
+       .ftfb {
+        margin-top: 20px;
+        text-align:left;
+        margin-left: 25%;
+        color: rgb(255, 214, 221);
+        font-size: 12px;
+        
+       }
+       .continue {
+        grid-area: continue;
+   
+       }
+       .recommendations {
+        grid-area: recommendations;
+     
+       }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="setting">
+            <img src="file:///Users/jeffchen/Downloads/web/dramaiimg/drama-site-imgs/profile-pic.jpg" alt="" class="profile">
+            <p class="jung05">jung05</p>
+            <p class="profile-settings">Profile Settings</p>
+            <p class="ftfb">
+            Favorites 
+            <br>
+            To Watch List 
+            <br>
+            Finished Watching 
+            <br>
+            Browse</p>
+        </div>
+        <div class="continue"></div>
+        <div class="recommendations"></div>
+    </div>
+</body>
+</html>

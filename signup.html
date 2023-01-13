@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+    .sign-up-grid {
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-areas: 
+            "img signup"
+            ;
+    }
+
+    .img-1 {
+        grid-area: img;
+        background-size: cover;
+        filter: blur(3px);
+    }
+    .p {
+        grid-area: signup;
+        color: white;
+        font-size: 36px;
+        font-weight: 600;
+        margin-left: 30%;
+        margin-top: 20%;
+
+        
+    }
+
+</style>
+<body>
+    <div class="sign-up-grid">
+        <div class="img">
+        <img src="file:///Users/jeffchen/Downloads/drama-site-imgs/movie9.jpg" alt="" class="img-1">
+    </div>    
+
+    <div class="signup">
+        <p class="p">Sign Up</p>
+    
+        
+    </div>
+</body>
+</html>
